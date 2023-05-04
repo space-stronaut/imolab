@@ -22,7 +22,7 @@
 
         <header class="header">
 
-            <a href="home.html" class="logo"><i class="fas-fa-utensils"></i>iMoLab.</a>
+            <a href="/" class="logo"><i class="fas-fa-utensils"></i>iMoLab.</a>
                 
             <nav class="navbar">
                 <a href="/">Home</a>
@@ -48,18 +48,22 @@
                             </div>
                         {{-- </li> --}}
                         @else
-                        <a class="active" href="login.html">Log In</a>
-                <a class="active" href="signup.html">Sign Up</a>
+                        <a class="active" href="{{ route('login') }}">Log In</a>
+                <a class="active" href="{{ route('register') }}">Sign Up</a>
                         @endauth
                 
             </nav>
+
 
             <div class="icons">
                 <i class="fas fa-bars" id="menu-bars"></i>
                 {{-- <i class="fas fa-search" id="search-icon"></i> --}}
                 {{-- <a href="#" class="fas fa-heart"></a> --}}
+                @auth
                 <a href="{{ route('cart.index') }}" class="fas fa-shopping-cart"></a>
                 <a href="{{ route('profile.index') }}" class="fas fa-user"></a>
+                @endauth
+                
             </div>
 
         </header>
