@@ -28,7 +28,11 @@
                 <a href="/">Home</a>
                 <a href="{{ route('tes.index') }}">Tes</a>
                 <a href="{{ route('panel.index') }}">Panel</a>
-                <a href="#dokter">Dokter</a>
+                @auth
+                <a href="{{ route('transaction.index') }}">History Pembelanjaan</a>
+                
+                @endauth
+                {{-- <a href="#dokter">Dokter</a> --}}
                 @auth
                         {{-- <li class="nav-item dropdown"> --}}
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

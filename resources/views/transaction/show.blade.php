@@ -1,6 +1,16 @@
 @extends('layouts.new')
 
 @section('content')
+<style>
+    .container{
+        font-size: 20px;
+        margin-bottom : 80px
+    }
+    body{
+      background-color: #e0eaff;
+      font-family: system-ui;
+  }
+</style>
     <div class="container" style="margin-top: 150px">
         <div class="card">
             <div class="card-header">

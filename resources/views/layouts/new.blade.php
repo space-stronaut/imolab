@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>iMoLab</title>
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> --}}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         
         <!-- font awesome cdn link -->
@@ -29,7 +29,11 @@
                 <a href="/">Home</a>
                 <a href="{{ route('tes.index') }}">Tes</a>
                 <a href="{{ route('panel.index') }}">Panel</a>
-                <a href="#dokter">Dokter</a>
+                @auth
+                <a href="{{ route('transaction.index') }}">History Pembelanjaan</a>
+                
+                @endauth
+                {{-- <a href="#dokter">Dokter</a> --}}
                 @auth
                         {{-- <li class="nav-item dropdown"> --}}
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

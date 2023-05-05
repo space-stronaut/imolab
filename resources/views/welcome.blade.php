@@ -64,7 +64,7 @@
     
 
     <!-- panel swiper starts -->
-    <div class="slide-container swiper" id="panel">
+    <div class="slide-container swiper" id="panel" style="margin-top: 200px">
         <h3 class="sub-heading"> Cek panel paling populer disini </h3>
         <h1 class="heading"> Panel Paling Populer </h1>
         <div class="slide-content">
