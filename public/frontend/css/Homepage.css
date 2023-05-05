@@ -250,9 +250,16 @@ header .icons #menu-bars {
     background-color: var(--deep-blue);
 }
 
+.product .slide-container .slide-content .card-wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+
 .product .slide-container .slide-content .card-wrapper .card {
     padding: 2rem;
-    width: 500px;
+    /* margin-left: 20px; */
+    width: 400px;
     height: 400px;
     background: #fff;
     border-radius: .5rem;

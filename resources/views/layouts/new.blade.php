@@ -7,6 +7,7 @@
         <title>iMoLab</title>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         
         <!-- font awesome cdn link -->
@@ -35,7 +36,7 @@
                                 Halo, <span class="text-bold text-uppercase">{{ Auth::user()->name }}</span>
                             </a>
 
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="margin-left: 300px">
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
@@ -49,7 +50,7 @@
                         {{-- </li> --}}
                         @else
                         <a class="active" href="{{ route('login') }}">Log In</a>
-                <a class="active" href="{{ route('register') }}">Sign Up</a>
+                <a class="active ms-2" href="{{ route('register') }}">Sign Up</a>
                         @endauth
                 
             </nav>
@@ -121,13 +122,15 @@
             <div class="credit"> <span>@iMoLab</span> All Rights Reserved, 2023 </div>
 
         </footer>
+        {{-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> --}}
+        @stack('scripts')
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        
 
         <!-- custom js file link -->
-        <script src="{{ asset('frontend/js/Homepage.js') }}"></script>
-@stack('scripts')
+        {{-- <script src="{{ asset('frontend/js/Homepage.js') }}"></script> --}}
+{{-- @stack('scripts') --}}
     </body>
 </html>

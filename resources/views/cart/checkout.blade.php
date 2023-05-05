@@ -4,6 +4,15 @@
     <link rel="stylesheet" href="{{ asset('css/form-validation.css') }}">
 @endpush
 @section('content')
+<style>
+  .container{
+      font-size: 20px
+  }
+  body{
+    background-color: #e0eaff;
+    font-family: system-ui;
+}
+</style>
 {{-- <div class="container">
     @php
         $ttl = 0;

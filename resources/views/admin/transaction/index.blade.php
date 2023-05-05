@@ -43,7 +43,7 @@
                                 </td>
                                 <td class="d-flex">
                                     <a href="{{ route('transaction.show', $item->id) }}" class="btn btn-outline-success me-2">Detail</a>
-                                    @if ($item->status == "menunggu konfirmasi")
+                                    {{-- @if ($item->status == "menunggu konfirmasi")
                                     <form action="{{ route('pemesanan.update', $item->id) }}" method="post">
                                         @method('put')
                                         @csrf
@@ -68,7 +68,7 @@
                                         <input type="hidden" name="status" value="paket sedang diantar ke alamat tujuan">
                                         <button class="btn btn-success">Selesai Kemas</button>
                                     </form>
-                                    @endif
+                                    @endif --}}
                                     
                                 </td>
                             </tr>

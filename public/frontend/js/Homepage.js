@@ -39,35 +39,35 @@ document.querySelector('#close').onclick = () => {
     document.querySelector('#search-form').classList.remove('active');
 }
 
-var swiper = new Swiper(".slide-content", {
-    spaceBetween: 30,
-    slidesPerView: 3,
-    loop: false,
-    centerSlide: true,
-    fade: true,
-    grabCursor: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+// var swiper = new Swiper(".slide-content", {
+//     spaceBetween: 30,
+//     slidesPerView: 3,
+//     loop: false,
+//     centerSlide: true,
+//     fade: true,
+//     grabCursor: true,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//         dynamicBullets: true,
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
 
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        950: {
-            slidesPerView: 3,
-        },
-    },
-});
+//     breakpoints: {
+//         0: {
+//             slidesPerView: 1,
+//         },
+//         520: {
+//             slidesPerView: 2,
+//         },
+//         950: {
+//             slidesPerView: 3,
+//         },
+//     },
+// });
 
 function loader(){
     document.querySelector('.loader-container').classList.add('fade-out');

@@ -27,8 +27,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $products = Product::get();
-    $tests = Product::where('category_id', 1)->get();
-    $panels = Product::where('category_id', 2)->get();
+    $tests = Product::where('category_id', 1)->paginate(3);
+    $panels = Product::where('category_id', 2)->paginate(3);
     return view('welcome', compact('products', 'tests', 'panels'));
 });
 

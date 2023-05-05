@@ -28,8 +28,8 @@
 <section class="product" id="product">
     
     <!-- tes swiper start -->
-    <div class="slide-container swiper" id="tes">
-        <h3 class="sub-heading"> Cek tes paling populer disini </h3>
+    <div class="slide-container swiper" id="panel">
+        <h3 class="sub-heading"> Cek Tes paling populer disini </h3>
         <h1 class="heading"> Tes Paling Populer </h1>
         <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
@@ -54,14 +54,14 @@
                     </div>
                 </div>
                 @endforeach
+                
             </div>
         </div>
 
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
     </div>
     <!-- tes swiper ends -->
+
+    
 
     <!-- panel swiper starts -->
     <div class="slide-container swiper" id="panel">
@@ -90,12 +90,10 @@
                     </div>
                 </div>
                 @endforeach
+                
             </div>
         </div>
 
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
     </div>
     <!-- panel swiper ends -->
 
@@ -140,3 +138,8 @@
 
 </section>
 @endsection
+
+@push('scripts')
+{{-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="{{ asset('frontend/js/Homepage.js') }}"></script> --}}
+@endpush

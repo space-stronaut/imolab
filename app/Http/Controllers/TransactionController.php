@@ -56,7 +56,7 @@ class TransactionController extends Controller
                 // 'tipe_pemesanan' => $request->tipe_pemesanan,
                 'waktu_pemeriksaan' => $request->waktu_pemeriksaan,
                 // 'alamat_tujuan' => $request->alamat_tujuan,
-                'status' => $request->status
+                'status' => "menunggu waktu pemeriksaan"
             ]);
 
             foreach ($request->id as $id) {

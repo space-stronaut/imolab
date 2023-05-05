@@ -1,12 +1,21 @@
 @extends('layouts.new')
 
 @section('content')
+<style>
+    .container{
+        font-size: 25px
+    }
+    body{
+    background-color: #e0eaff;
+    font-family: system-ui;
+}
+</style>
 {{-- @guest
     @php
         return redirect('/login');
     @endphp
 @endguest --}}
-    <div class="container" style="margin-top: 80px">
+    <div class="container" style="margin-top: 80px; margin-bottom : 80px">
         <div class="card">
             <div class="card-header">
                 My Cart
